@@ -1,0 +1,311 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Montserrat', sans-serif;
+}
+header{
+    position: fixed;
+    width: 100%;
+    height: 18vh;
+    top: 0;
+    left: 0;
+    display: flex;
+    gap: 1vw;
+    align-items: center;
+    transition: 0.6s;    
+    z-index: 999;
+    border-bottom: 1px solid gainsboro;
+    background:linear-gradient(to right,rgba(154, 193, 66, 1) , rgba(223, 202, 42, 1));
+}
+header>.fa-bars{
+    position: absolute;
+    left: 50vw;
+    font-size: 40px;
+    color: #fff;
+    display:none;
+}
+header>.fa-times{
+    position: absolute;
+    left: 50vw;
+    font-size: 40px;
+    color: #fff;
+    display: none;
+    cursor: pointer;
+}
+header>.order-list{
+    position: absolute;
+    top: 13vh;
+    left: 0;
+    width: 200px;
+    line-height: 10px;
+    display: flex;
+    flex-direction: column;
+    background:linear-gradient(to right,rgba(154, 193, 66, 1) , rgba(223, 202, 42, 1)) ;
+    display: none;
+    transition: all 2s ease-in;
+}
+header>.order-list>hr{
+    width: 100%;
+}
+header>ul{
+    position: relative;
+    top: 0px;
+    left: 10vw;
+    display: flex;
+    gap: 1vw;
+    align-items: center;
+    justify-content: center;
+}
+header>ul>li{
+    position: relative;
+    list-style: none;
+    font-size: 13px;
+    background-color: transparent;
+    padding: 25px 20px;
+    transition: all 0.5s ease-out;
+}
+header>ul>li:hover{
+    background-color: rgba(0,0,0,.5);
+}
+header>ul>li>a{
+    position: relative;
+    text-decoration: none;
+    color: #ffff;
+}
+.carry{
+    position: relative;
+    top: 0vh;
+    height: 90vh;
+    max-height: 100%;
+    width: 100%;
+    background-image:url(samana-project/final.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.page{
+    position: relative;
+    font-family: 'Montserrat', sans-serif;
+    top: 0vh;
+    height: 45vh;
+    max-height: 100%;
+    overflow: hidden;
+}
+.page>.hard{
+    margin: 10vh auto;
+    width: 85vw;
+    max-width: 100%;
+}
+.page>.hard>h1{
+    font-family: 'Montserrat' , sans-serif;
+    font-size: 30px;
+    text-align: center;
+}
+.page>.hard>p{
+    font-family: 'Montserrat', sans-serif; 
+    color: #333;
+    font-weight:400;
+    line-height: 30px;
+    text-align: center;
+}
+.line-1{
+    height: 2px;
+    background:linear-gradient(to right, #9ac142, #dfca2b);
+    border: none;
+    width: 100%;
+    margin-left: 0vw;
+    display: none;
+}
+.what{
+    position: relative;
+    height: 250vh;
+    max-height: 100%;
+    overflow: hidden;
+}
+.what>.soft{
+  margin: 0px auto;
+}
+.what>.soft>h1{
+    font-family: 'Montserrat' , sans-serif;
+    font-size: 30px;
+    text-align: center;
+}
+.what>.space{
+    margin: 15vh auto;
+    display: flex;
+    gap: 2vw;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.what>.space>.fill{
+    width: 30vw;
+    height: 50vh;
+    max-width: 100%;
+    cursor: pointer;
+}
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+}
+
+.zoomed-image {
+    max-width: 90%;
+    max-height: 80%;
+    object-fit: contain;
+}
+
+.close-btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 24px;
+    color: #fff;
+    cursor: pointer;
+}
+.this{
+    position: relative;
+    height: 90vh;
+    max-height: 100%;
+    overflow: hidden;
+}
+.this>.that{
+   margin: 0px auto;
+}
+.this>.that>h1{
+    font-family: 'Montserrat' , sans-serif;
+    font-size: 30px;
+    text-align:center;
+}
+.this>.that>.video{
+   margin: 10vh auto;
+    width: 70vw;
+    height: 400px;
+    max-width: 100%;
+    background-color: #fff;
+}
+.make{
+    position: relative;
+    height: 100vh;
+    max-height: 100%;
+    overflow: hidden;
+}
+.make>.job{
+    margin: 0px auto;
+}
+.make>.job>h1{
+    font-family: 'Montserrat' , sans-serif;
+    font-size: 30px;
+   text-align: center;
+}
+.make>.job>.close{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.make>.job>.close>.image{
+    margin: 13vh auto;
+  width: 40vw;
+  max-width: 100%;
+  height: 30vw;
+  max-height: 100%;
+  background-color: #fff;
+  cursor: pointer;
+}
+.make>.job>.close>.text{
+    margin: 0px auto;
+}
+.make>.job>.close>.text>h1{
+   font-family: 'Montserrat' , sans-serif;
+   text-align: center;
+}
+.make>.job>.close>.text>a{
+    text-decoration: none;
+    color: #000;
+}
+.make>.job>.close>.text>a>button{
+     margin: 0px auto;
+     display: block;
+    font-family: 'Montserrat' , sans-serif;
+    font-weight: 400;
+    width: 230px;
+    height: 40px;
+    background: linear-gradient(to right,rgba(154,193,66,1) , rgba(223,202,42,1));
+    border: 1px solid transparent;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    cursor: pointer;
+}
+.footer{
+    position: relative;
+    height: 60vh;
+    max-height: 100%;
+    max-width: 100%;
+    background:linear-gradient(to right,rgba(154, 193, 66, 1) , rgba(223, 202, 42, 1));
+    overflow: hidden;
+}
+.footer>.master{
+    margin: 0px auto;
+}
+.footer>.master>.extract{
+    display: flex;
+    padding-top: 5vh;
+    padding-left: 5vw;
+    gap: 5vw;
+}
+.footer>.master>.extract>.quick-links>ul{
+    list-style: none;
+    line-height: 40px;
+}
+.footer>.master>.extract>.quick-links>ul>li>a{
+    text-decoration: none;
+    color: #fff;
+}
+.footer>.master>.extract>.social>ul{
+    list-style: none;
+    line-height: 40px;
+}
+.footer>.master>.extract>.social>ul>li>a{
+    text-decoration: none;
+    color: #fff;
+}
+.footer>.master>.extract>.top>ul{
+    list-style: none;
+    line-height: 40px;
+}
+.footer>.master>.extract>.top>ul>li>a{
+    text-decoration: none;
+    color: #fff;
+}
+.footer>.master>.extract>.location>ul{
+    list-style: none;
+    line-height: 40px;
+}
+.footer>.master>.extract>.location>ul>li>a{
+    text-decoration: none;
+    color: #fff;
+}
+.footer>.master>.footer-imp{
+    background:linear-gradient(to right ,rgba(154, 193, 66, 1) , rgba(223, 202, 42, 1));
+    border: 1px solid white;
+    height: 9.75vh;
+    width: 100%;
+    max-height: 100%;
+    margin: 10vh auto;
+}
+.footer>.master>.footer-imp>p{
+    padding-top: 3vh;
+    text-align: center;
+    color: #ffff;
+}

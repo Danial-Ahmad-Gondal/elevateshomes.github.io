@@ -1,0 +1,471 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Poppins', sans-serif;
+}
+header{
+    position: fixed;
+    width: 100%;
+    height: 13vh;
+    top: 0;
+    left: 0;
+    display: flex;
+    gap: 1vw;
+    align-items: center;
+    transition: 0.6s;    
+    z-index: 100000;
+    border-bottom: 1px solid linear-gradient(to right,rgba(154, 193, 66, 1) , rgba(223, 202, 42, 1));
+    background: linear-gradient(to right,rgba(154, 193, 66, 1) , rgba(223, 202, 42, 1));
+}
+header>.fa-bars{
+    position: absolute;
+    left: 50vw;
+    font-size: 40px;
+    color: #fff;
+    display: none;
+}
+header>.fa-times{
+    position: absolute;
+    left: 50vw;
+    font-size: 40px;
+    color: #fff;
+    display: none;
+    cursor: pointer;
+}
+header>.order-list{
+    position: absolute;
+    top: 13vh;
+    left: 0;
+    width: 200px;
+    line-height: 10px;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(to right,rgba(154, 193, 66, 1) , rgba(223, 202, 42, 1));
+    display: none;
+    transition: all 2s ease-in;
+}
+header>.order-list>hr{
+    width: 100%;
+}
+header>ul{
+    position: relative;
+    top: 1vh;
+    left: 2vw;
+    display: flex;
+    gap: 1vw;
+    align-items: center;
+    justify-content: center;
+}
+header>ul>li{
+    position: relative;
+    list-style: none;
+    font-size: 13px;
+    background-color: transparent;
+    padding: 25px 20px;
+    transition: all 0.5s ease-out;
+}
+header>ul>li:hover{
+    background-color: rgba(0,0,0,.5);
+}
+header>ul>li>a{
+    position: relative;
+    text-decoration: none;
+    color: #fff;
+}
+.empty{
+    position: relative;
+    width: 100%;
+    height: 30vh;
+}
+.begin{
+    position: relative;
+    height:130vh;
+    width: 100%;
+}
+.begin>.aboor{
+    margin: 0px auto;
+}
+.begin>.aboor>start{
+  margin: 0px auto;
+}
+.begin>.aboor>.start>h3{
+    color: #000;
+    text-align: center;
+    font-size: 35px;
+}
+.begin>.aboor>.text{
+    margin: 5vh auto;
+    max-width: 100%;
+    text-align: center;
+}
+.begin>.aboor>.style{
+margin: 0px auto;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.begin>.aboor>.style>h5{
+    font-size: 23px;
+    text-align: center;
+}
+/*CHAT GPT CODE OF SLIDER*/
+.check {
+    position: relative;
+    height: 800vh; /* Adjust the height as needed */
+    max-height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .check>.hit {
+    margin: 0 auto;
+    max-width: 800px; /* Adjust the maximum width as needed */
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    flex-direction: column;
+    gap: 10vh;
+  }
+  
+  .check .heading h2 {
+    font-size: 24px; /* Adjust the font size as needed */
+  }
+  
+  .check .slider-container {
+    margin:0px auto;
+    width: 100%;
+    max-width: 800px; /* Adjust the maximum width as needed */
+    height: auto; /* Adjust the height as needed */
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5vh;
+    position: relative;
+  }
+  
+  .check .slider {
+    display: flex;
+    align-items: center;
+    transition: transform 0.5s;
+    width: 100%; /* Adjust the width as needed */
+  }
+  
+  .check .slider-image {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  .check .slider-btn {
+    position: absolute;
+    top: 50%;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: none;
+    padding: 10px 20px;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 1; /* Ensure the buttons appear above the images */
+  }
+  
+  .check .slider-btn-left {
+    left: 0;
+  }
+  
+  .check .slider-btn-right {
+    right: 0;
+  }
+   /*now it is the second div of the slider being started*/
+   .check>.hit> .heading-1> h2 {
+    font-size: 24px; /* Adjust the font size as needed */
+  }
+  
+  .check .matchup {
+    width: 100%;
+    max-width: 800px; /* Adjust the maximum width as needed */
+    height: auto; /* Adjust the height as needed */
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5vh;
+    position: relative;  
+  }
+  
+  .check .more {
+    display: flex;
+    align-items: center;
+    transition: transform 0.5s;
+    width: 100%; /* Adjust the width as needed */
+  }
+  
+  .check .more-image {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  .check .goter-btn {
+    position: absolute;
+    top: 50%;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: none;
+    padding: 10px 20px;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 1; /* Ensure the buttons appear above the images */
+  }
+  
+  .check .slider-btn-left-1 {
+    left: 0;
+  }
+  
+  .check .slider-btn-right-1 {
+    right: 0;
+  }
+   /* New CSS for the third slider */
+   .check .doup {
+    width: 100%;
+    max-width: 800px; /* Adjust the maximum width as needed */
+    height: auto; /* Adjust the height as needed */
+    overflow: hidden;
+    position: relative;
+    gap: 5vh;
+  }
+  .check .lore{
+    display: flex;
+    align-items: center;
+    transition: transform 0.5s;
+    width: 100%; /* Adjust the width as needed */
+  }
+  
+  .check .lore-image {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  .check .loter-btn {
+    position: absolute;
+    top: 50%;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: none;
+    padding: 10px 20px;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 1; /* Ensure the buttons appear above the images */
+  }
+  
+  .check .slider-btn-left-2 {
+    left: 0;
+  }
+  
+  .check .slider-btn-right-2 {
+    right: 0;
+  }
+
+  /*fourth slider starts away from here*/
+  .check .doun {
+    margin:0px auto;
+    width: 100%;
+    max-width: 800px; /* Adjust the maximum width as needed */
+    height: auto; /* Adjust the height as needed */
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5vh;
+    position: relative;
+  }
+  
+  .check .tore {
+    display: flex;
+    align-items: center;
+    transition: transform 0.5s;
+    width: 100%; /* Adjust the width as needed */
+  }
+  
+  .check .tore-image {
+    max-width: 100%;
+    object-fit: cover;
+  }
+  
+  .check .lotar-btn {
+    position: absolute;
+    top: 50%;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: none;
+    padding: 10px 20px;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 1; /* Ensure the buttons appear above the images */
+  }
+  
+  .check .slider-btn-left-3 {
+    left: 0;
+  }
+  
+  .check .slider-btn-right-3 {
+    right: 0;
+  }
+
+  /*fifth slider starts from herer*/
+  .check .dout {
+    width: 100%;
+    max-width: 800px; /* Adjust the maximum width as needed */
+    height: auto; /* Adjust the height as needed */
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5vh;
+    position: relative;
+  }
+  
+  .check .pore {
+    display: flex;
+    align-items: center;
+    transition: transform 0.5s;
+    width: 100%; /* Adjust the width as needed */
+  }
+  
+  .check .pore-image {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  .check .letar-btn {
+    position: absolute;
+    top: 50%;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: none;
+    padding: 10px 20px;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 1; /* Ensure the buttons appear above the images */
+  }
+  
+  .check .slider-btn-left-4 {
+    left: 0;
+  }
+  
+  .check .slider-btn-right-4 {
+    right: 0;
+  }
+  /*sixth slider starts from here*/
+  .check .douw {
+    width: 100%;
+    max-width: 800px; /* Adjust the maximum width as needed */
+    height: auto; /* Adjust the height as needed */
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5vh;
+    position: relative;
+  }
+  
+  .check .jore {
+    display: flex;
+    align-items: center;
+    transition: transform 0.5s;
+    width: 100%; /* Adjust the width as needed */
+  }
+  
+  .check .jore-image {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  .check .letor-btn {
+    position: absolute;
+    top: 50%;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: none;
+    padding: 10px 20px;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 1; /* Ensure the buttons appear above the images */
+  }
+  
+  .check .slider-btn-left-5 {
+    left: 0;
+  }
+  
+  .check .slider-btn-right-5 {
+    right: 0;
+  }
+/*footer starts*/
+.footer{
+    position: relative;
+    height: 60vh;
+    max-height: 100%;
+    background:linear-gradient(to right,rgba(154, 193, 66, 1) , rgba(223, 202, 42, 1));
+    overflow: hidden;
+}
+.footer>.master{
+    margin: 0px auto;
+}
+.footer>.master>.extract{
+    display: flex;
+    padding-top: 5vh;
+    padding-left: 5vw;
+    gap: 5vw;
+}
+.footer>.master>.extract>.quick-links>ul{
+    list-style: none;
+    line-height: 40px;
+}
+.footer>.master>.extract>.quick-links>ul>li>a{
+    text-decoration: none;
+    color: #fff;
+}
+.footer>.master>.extract>.social>ul{
+    list-style: none;
+    line-height: 40px;
+}
+.footer>.master>.extract>.social>ul>li>a{
+    text-decoration: none;
+    color: #fff;
+}
+.footer>.master>.extract>.top>ul{
+    list-style: none;
+    line-height: 40px;
+}
+.footer>.master>.extract>.top>ul>li>a{
+    text-decoration: none;
+    color: #fff;
+}
+.footer>.master>.extract>.location>ul{
+    list-style: none;
+    line-height: 40px;
+}
+.footer>.master>.extract>.location>ul>li>a{
+    text-decoration: none;
+    color: #fff;
+}
+.footer>.master>.footer-imp{
+    background:linear-gradient(to right ,rgba(154, 193, 66, 1) , rgba(223, 202, 42, 1));
+    border: 1px solid white;
+    height: 9.75vh;
+    width: 100%;
+    max-height: 100%;
+    margin: 10vh auto;
+}
+.footer>.master>.footer-imp>p{
+    padding-top: 3vh;
+    text-align: center;
+    color: #ffff;
+}
